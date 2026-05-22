@@ -1,8 +1,8 @@
-# Intrusion Detection System Using Machine Learning
+# Hybrid Intrusion Detection System Using Machine Learning
 
 ## 📌 Project Overview
 
-The **Intrusion Detection System (IDS) Using Machine Learning** is an advanced cybersecurity solution designed to detect malicious network activities and classify attacks in real-time using Artificial Intelligence and Machine Learning techniques.
+The **Hybrid Intrusion Detection System (IDS) Using Machine Learning** is an advanced cybersecurity solution designed to detect malicious network activities and classify attacks in real-time using Artificial Intelligence and Machine Learning techniques.
 
 This project utilizes the **UNSW-NB15 dataset**, one of the most modern and realistic cybersecurity datasets, to train and evaluate machine learning models capable of identifying both normal and malicious network traffic patterns.
 
