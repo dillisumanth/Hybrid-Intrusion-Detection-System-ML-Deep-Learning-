@@ -1,305 +1,269 @@
+# Intrusion Detection System Using Machine Learning
 
+## 📌 Project Overview
 
-The Hybrid Intrusion Detection System (IDS) is an advanced cybersecurity solution designed to detect malicious activities, abnormal behavior, and potential cyber threats within network environments using Machine Learning techniques. The project combines real-time monitoring, intelligent traffic analysis, behavioral anomaly detection, and automated threat classification to improve the accuracy and efficiency of modern security operations.
+The **Intrusion Detection System (IDS) Using Machine Learning** is an advanced cybersecurity solution designed to detect malicious network activities and classify attacks in real-time using Artificial Intelligence and Machine Learning techniques.
 
-Unlike traditional signature-based IDS solutions that rely only on predefined attack patterns, this system uses Machine Learning algorithms to identify both known and unknown threats, including zero-day attacks and suspicious behavioral patterns.
+This project utilizes the **UNSW-NB15 dataset**, one of the most modern and realistic cybersecurity datasets, to train and evaluate machine learning models capable of identifying both normal and malicious network traffic patterns.
 
-The system is developed for:
+The system performs intelligent threat detection by analyzing network packet features and predicting potential cyberattacks such as:
 
-Cybersecurity Research
-SOC (Security Operations Center) Environments
-Ethical Hacking & Penetration Testing Labs
-Academic Research & Projects
-Enterprise Network Monitoring
-ML-Based Threat Detection Research
-Key Features
-Real-Time Intrusion Detection
-Continuously monitors network traffic and system activity.
-Detects suspicious behavior in real time.
-Supports intelligent anomaly detection.
-Machine Learning-Based Detection
-Uses ML algorithms to classify malicious and benign traffic.
-Capable of detecting previously unseen attacks.
-Improves detection accuracy compared to traditional rule-based systems.
-Behavioral Analysis Engine
-Monitors abnormal patterns such as:
-Port scanning
-Brute-force attempts
-Suspicious login behavior
-Flooding attacks
-Network anomalies
-Intelligent Threat Classification
-Categorizes traffic into:
-Normal
-Suspicious
-Malicious
-Provides threat confidence scores.
-Log Analysis & Threat Correlation
-Analyzes system and network logs.
-Correlates multiple suspicious events.
-Generates actionable security alerts.
-Dataset Training Support
-Supports datasets such as:
-NSL-KDD
-CICIDS2017
-Custom enterprise datasets
-Data Visualization
+* DoS (Denial of Service)
+* Exploits
+* Fuzzers
+* Backdoors
+* Reconnaissance
+* Worms
+* Shellcode Attacks
+* Generic Attacks
+* Analysis Attacks
+
+The project provides a complete end-to-end workflow including:
+
+* Data preprocessing
+* Feature engineering
+* Model training
+* Real-time prediction
+* Threat classification
+* Scan result visualization
+* Performance evaluation
+
+It is developed using **Python**, **Machine Learning**, and modern data science libraries to demonstrate how AI can improve cybersecurity defense systems.
+
+---
+
+# 🚀 Features
+
+## 🔍 Intelligent Threat Detection
+
+Detects malicious traffic patterns using trained Machine Learning algorithms.
+
+## 📊 Dataset-Based Learning
+
+Uses the UNSW-NB15 dataset for realistic cybersecurity attack simulation.
+
+## ⚡ Real-Time Prediction
+
+Analyzes incoming network traffic and predicts whether it is normal or malicious.
+
+## 🧠 Machine Learning Integration
+
+Supports multiple ML algorithms such as:
+
+* Random Forest
+* Decision Tree
+* Logistic Regression
+* KNN
+* SVM
+* XGBoost (Optional)
+
+## 📈 Performance Metrics
+
 Displays:
-Threat statistics
-Detection reports
-Traffic analysis
-Alert summaries
-Accuracy metrics
-Modular Architecture
-Easy to integrate with:
-SIEM platforms
-Security dashboards
-Cloud environments
-Enterprise monitoring tools
-Scalable & Research-Oriented
-Suitable for:
-Academic projects
-Research publications
-Future PhD research expansion
-Enterprise-level security enhancement
-Project Architecture
-                +----------------------+
-                | Network Traffic/Data |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Data Collection Layer |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Feature Extraction    |
-                | & Preprocessing       |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Machine Learning      |
-                | Detection Engine      |
-                +----------+-----------+
-                           |
-             +-------------+-------------+
-             |                           |
-             v                           v
-  +-------------------+      +-------------------+
-  | Threat Detection  |      | Anomaly Detection |
-  +-------------------+      +-------------------+
-             |                           |
-             +-------------+-------------+
-                           |
-                           v
-                +----------------------+
-                | Alert & Logging Layer |
-                +----------+-----------+
-                           |
-                           v
-                +----------------------+
-                | Visualization & GUI  |
-                +----------------------+
-Technologies Used
-Programming Language
-Python 3.x
-Machine Learning Libraries
-Scikit-learn
-TensorFlow / Keras
-NumPy
-Pandas
-Joblib
-Visualization Libraries
-Matplotlib
-Seaborn
-Plotly
-Networking & Security Tools
-Scapy
-Socket Programming
-PyShark
-Wireshark Integration
-GUI Framework
-Tkinter
-ttkbootstrap
-Data Processing
-CSV
-PCAP
-JSON Log Processing
-Machine Learning Workflow
-1. Data Collection
 
-The system collects network traffic and security logs from various sources including:
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
 
-Packet captures (PCAP)
-System logs
-Firewall logs
-Authentication logs
-Real-time traffic monitoring
-2. Data Preprocessing
+## 🖥️ Scan Visualization
 
-The collected data undergoes:
+Provides graphical outputs for attack detection and prediction analysis.
 
-Cleaning
-Normalization
-Encoding
-Missing value handling
-Feature scaling
+## 🔐 Cybersecurity Focused
 
-Example features:
+Built specifically for:
 
-Source IP
-Destination IP
-Protocol
-Packet count
-Session duration
-Failed login attempts
-Traffic frequency
-3. Feature Engineering
+* Security Research
+* Intrusion Detection
+* Threat Analysis
+* Academic Projects
+* Cybersecurity Learning
 
-Behavioral patterns are extracted for accurate threat detection.
+---
 
-Examples:
+# 🛠️ Technologies Used
 
-Port scanning frequency
-Login burst behavior
-Connection anomalies
-Time-based activity patterns
-4. Model Training
+| Technology        | Purpose              |
+| ----------------- | -------------------- |
+| Python            | Core Development     |
+| Pandas            | Data Processing      |
+| NumPy             | Numerical Operations |
+| Scikit-Learn      | Machine Learning     |
+| Matplotlib        | Visualization        |
+| Seaborn           | Data Analysis        |
+| Joblib            | Model Saving         |
+| UNSW-NB15 Dataset | Training Dataset     |
 
-The system trains ML models using labeled and unlabeled datasets.
+---
 
-Supported Algorithms:
+# 📂 Dataset Information
 
-Random Forest
-Decision Tree
-XGBoost
-Isolation Forest
-SVM
-Neural Networks
-Autoencoders
-5. Threat Detection
+This project uses the **UNSW-NB15 Cybersecurity Dataset** developed by the Australian Centre for Cyber Security (ACCS).
 
-The trained model analyzes incoming traffic and predicts whether activity is:
+### Included Dataset Files
 
-Normal
-Suspicious
-Malicious
-6. Alert Generation
+* `UNSW_NB15_training-set.csv`
+* `UNSW_NB15_testing-set.csv`
+* `NUSW-NB15_features.csv`
+* `UNSW-NB15_LIST_EVENTS.csv`
 
-When a threat is detected, the system:
+The dataset contains modern network traffic records with both normal and malicious activities.
 
-Logs the incident
-Generates alerts
-Stores threat metadata
-Displays results in GUI/dashboard
-Folder Structure
-AI_IDS_Project/
-│
-├── datasets/
-│   ├── raw/
-│   ├── processed/
-│
-├── models/
-│   ├── trained_models/
-│
-├── logs/
-│   ├── alerts/
-│   ├── system_logs/
-│
-├── screenshots/
-│
-├── src/
-│   ├── data_preprocessing.py
-│   ├── feature_engineering.py
-│   ├── train_model.py
-│   ├── detection_engine.py
-│   ├── anomaly_detector.py
-│   ├── visualization.py
-│   ├── gui.py
-│
-├── requirements.txt
-├── README.md
-└── main.py
-Installation Guide
-Step 1 — Clone Repository
-git clone https://github.com/yourusername/AI_IDS_Project.git
-cd AI_IDS_Project
-Step 2 — Create Virtual Environment
-Windows
-python -m venv venv
-venv\Scripts\activate
-Linux / macOS
-python3 -m venv venv
-source venv/bin/activate
-Step 3 — Install Dependencies
+---
+
+# ⚙️ Working Process
+
+## 1️⃣ Data Collection
+
+The UNSW-NB15 dataset is loaded and merged for training and testing.
+
+## 2️⃣ Data Preprocessing
+
+The system performs:
+
+* Missing value handling
+* Label encoding
+* Feature selection
+* Data normalization
+
+## 3️⃣ Model Training
+
+Machine Learning models are trained on labeled network traffic data.
+
+## 4️⃣ Attack Prediction
+
+The trained model predicts whether incoming traffic is:
+
+* Normal
+* Malicious
+
+## 5️⃣ Threat Classification
+
+Detected attacks are categorized into specific attack types.
+
+## 6️⃣ Result Visualization
+
+Outputs are displayed using graphs, confusion matrices, and prediction summaries.
+
+---
+
+# 📈 Machine Learning Workflow
+
+```text
+UNSW-NB15 Dataset
+        ↓
+Data Preprocessing
+        ↓
+Feature Engineering
+        ↓
+Model Training
+        ↓
+Threat Prediction
+        ↓
+Attack Classification
+        ↓
+Visualization & Reporting
+```
+
+---
+
+# 🧪 Model Evaluation
+
+The trained model is evaluated using standard Machine Learning metrics:
+
+| Metric           | Description                    |
+| ---------------- | ------------------------------ |
+| Accuracy         | Overall prediction correctness |
+| Precision        | Correct positive predictions   |
+| Recall           | Detection capability           |
+| F1-Score         | Balanced performance measure   |
+| Confusion Matrix | Detailed prediction analysis   |
+
+---
+
+# 📌 Use Cases
+
+* Intrusion Detection Systems
+* Security Operation Centers (SOC)
+* Threat Monitoring
+* Cybersecurity Research
+* AI-Based Security Systems
+* Academic Final Year Projects
+* Network Traffic Analysis
+
+---
+
+# 🔒 Future Enhancements
+
+* Real-Time Packet Sniffing
+* Deep Learning Integration
+* Web-Based Dashboard
+* Live Threat Monitoring
+* SIEM Integration
+* Cloud Deployment
+* Automated Threat Response
+
+---
+
+# ▶️ How to Run the Project
+
+```bash
+# Clone Repository
+git clone <repository-link>
+
+# Navigate to Project Folder
+cd IDS-ML-Project
+
+# Install Dependencies
 pip install -r requirements.txt
-Required Dependencies
-numpy
-pandas
-scikit-learn
-tensorflow
-matplotlib
-seaborn
-scapy
-pyshark
-joblib
-ttkbootstrap
-Running the Project
-Train the Model
-python train_model.py
-Start Detection System
+
+# Run the Project
 python main.py
-Launch GUI
-python gui.py
-Example Workflow
-Capture network traffic.
-Preprocess captured data.
-Extract security features.
-Train ML model.
-Detect malicious activity.
-Generate alerts.
-Display results in dashboard.
-Example Threats Detected
-Brute Force Attacks
+```
 
-Detects repeated failed login attempts.
+---
 
-Port Scanning
+# 📁 Project Structure
 
-Identifies abnormal port probing activities.
+```text
+IDS-ML-Project/
+│
+├── dataset/
+├── models/
+├── outputs/
+├── visuals/
+├── main.py
+├── train_model.py
+├── predict.py
+├── requirements.txt
+└── README.md
+```
 
-DDoS/Flooding Attacks
+---
 
-Detects excessive traffic spikes.
+# 📚 Learning Outcomes
 
-Suspicious Connections
+This project demonstrates:
 
-Flags unusual communication behavior.
+* Practical Machine Learning in Cybersecurity
+* Network Threat Detection
+* AI-Based Intrusion Analysis
+* Dataset Preprocessing Techniques
+* Real-Time Prediction Systems
+* Security Analytics
 
-Insider Threat Behavior
+---
 
-Identifies abnormal user activity patterns.
+# 👨‍💻 Author
 
-Zero-Day Anomalies
+Developed as a Machine Learning and Cybersecurity project for advanced intrusion detection and intelligent threat analysis.
 
-Uses anomaly detection to identify unknown threats.
+---
 
-Performance Metrics
+# ⭐ Conclusion
 
-The IDS evaluates model performance using:
+The **Machine Learning Based Intrusion Detection System** demonstrates how Artificial Intelligence can be leveraged to strengthen cybersecurity infrastructures by automatically detecting and classifying malicious network activities.
 
-Accuracy
-Precision
-Recall
-F1-Score
-ROC-AUC
-Confusion Matrix
-
-Example:
-
-Accuracy  : 98.2%
-Precision : 97.8%
-Recall    : 96.9%
-F1 Score  : 97.3%
+This project combines Machine Learning, Data Analytics, and Cybersecurity concepts into a powerful intelligent security solution capable of improving modern network defense systems.
